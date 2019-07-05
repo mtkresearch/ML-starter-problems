@@ -1,8 +1,13 @@
 # ML-starter-problems
-This repository contains a collection of problems to help new people enter the field of deep learning for computer vision.\
-We provide below a list of problems to start with, along with a short description.\
+This repository contains a live collection of fun problems to help new people understand MediaTek Research Cambridge, and potentially for enthusiastic practitioners to work on ideas in these areas. Some of these problems will require inventing new ideas.\
 \
-If you have solved a problem, please open a pull request. A solution will contain both code and a brief explanation of the procedure followed.
+We provide below a list of problems to start with, along with a short description.\
+If you have solved a problem, please open a pull request linking it in a "solutions" section for the relevant problem.\
+A solution will contain both code and a brief explanation of the procedure followed.\
+You are encouraged to:\
+Suggest new problems\
+Suggest improvements to existing problems\
+Link your solution.
 
 ## Challenge #1: AI-based compression
 
