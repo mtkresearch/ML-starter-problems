@@ -4,7 +4,7 @@ We provide below a list of problems to start with, along with a short descriptio
 \
 If you have solved a problem, please open a pull request. A solution will contain both code and a brief explanation of the procedure followed.
 
-## Challenge #1
+## Challenge #1: AI-based compression
 
 This challenge is a toy problem to warm up to AI-based compression. This challenge composes of several steps, each is a quantum jump more difficult/more computational demanding compared to a previous one.\
 \
@@ -14,7 +14,7 @@ This challenge is a toy problem to warm up to AI-based compression. This challen
 \
 (c) If you are not satisfied with the result in (b), can you improve upon it? Perhaps you surmise that it is the architecture that is the problem. In which case you can seek a non-CNN solution. For instance, you may try fully connected networks, or self-attention networks. Perhaps you surmise that it is a lack-of-information issue. In which case you might feed the network additional information to help it learn. For instance, you might try the coordinate convolution trick.
 
-## Challenge #2
+## Challenge #2: AI-based generation
 
 This challenge is a toy problem to warm up to AI-based generation. This challenge composes of several steps, each is a quantum jump more difficult/more computational demanding compared to a previous one.\
 \
@@ -26,6 +26,11 @@ This challenge is a toy problem to warm up to AI-based generation. This challeng
 \
 (d) Treat the networks in steps (b) and (c) as being given. Here we want you to try early rejection. That is, the generator in (c) operates in a layer-by-layer manner, advancing from the input layer to the output layer. Try to declare a given run of this generator will be rejected by the discriminator using some observation before the generator's final output layer.
 
+## Challenge 3: Entropy from partial information in images
+
+In MNIST each image has dimensions 28x28 and with each pixel represented by a grayscale value with range [0,255]. Rescale the images such that they are in the rate [1, 255].  For each pixel you can get do x <- min(x+1, 255). We will use 0 to represent an unknown value.  We can now generate images with unknown values programmatically or randomly by inserting zeros into each image.\
+\
+Train a network to predict probability distributions (categorical) of unknown pixels given an image that has unknown values.  After training the network, given an image that is completely unknown, which pixels have the highest entropy?  Can you propose and explanation for your results?
 
 
  
