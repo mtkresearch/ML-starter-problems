@@ -1,0 +1,20 @@
+---
+title: "AI-based compression"
+summary: ''
+difficulty: 2 # out of 3
+---
+
+<p>This challenge is a toy problem to warm up to AI-based compression. This challenge composes of several steps, each is a quantum jump more difficult/more computational demanding compared to a previous one.</p>
+
+<ul>
+  <li> Randomly generate a set of vectors. Each vector has 64 pixels organized in a row. The value of pixel 0 to pixel L is 0.0, of pixel L+1 to R is 1.0, of R+1 to 63 is 0.0. This is a dataset of one-dimensional black-and-white "images".</li>
+
+  <li> Define a CNN-based autoencoder (of any kind) that takes in and reproduces the above images. Show us how well you are doing. Can your network perfectly reproduce the input? What is the minimal cardinality of the bottleneck layer? You must select the parameters properly, so that the network does not learn the trivial solution. </li>
+
+  <li>  If you are not satisfied with the result in (b), can you improve upon it? Perhaps you surmise that it is the architecture that is the problem. In which case you can seek a non-CNN solution. For instance, you may try fully connected networks, or self-attention networks. Perhaps you surmise that it is a lack-of-information issue. In which case you might feed the network additional information to help it learn. For instance, you might try the coordinate convolution trick.  </li>
+
+</ul>
+
+<hr />
+
+<h3>Solutions</h3>
