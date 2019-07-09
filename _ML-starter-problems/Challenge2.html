@@ -1,0 +1,22 @@
+---
+title: "AI-based generation"
+summary: ''
+difficulty: 3 # out of 3
+---
+
+<p>This challenge is a toy problem to warm up to AI-based generation. This challenge composes of several steps, each is a quantum jump more difficult/more computational demanding compared to a previous one.</p>
+
+<ul>
+  <li> Pick at your own whim a stochastic random process that can generate a time-varying sequence of 16-dimensional vectors. You will use this to generate ground truth.</li>
+
+  <li> Give a discriminator which takes in two vectors and determines whether it is plausible that the second vector follows the first vector. </li>
+
+  <li> Give a generator that takes in vector n and generates an output vector to fool the discriminator. That means, the discriminator should deem this fake vector to be a plausible vector n+1. Try to avoid trivial solutions.  </li>
+
+  <li> Treat the networks in steps (b) and (c) as being given. Here we want you to try early rejection. That is, the generator in (c) operates in a layer-by-layer manner, advancing from the input layer to the output layer. Try to declare a given run of this generator will be rejected by the discriminator using some observation before the generator's final output layer.  </li>
+
+</ul>
+
+<hr />
+
+<h3>Solutions</h3>
