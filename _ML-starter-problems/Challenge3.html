@@ -1,0 +1,14 @@
+---
+title: "Entropy from partial information in images"
+summary: ''
+difficulty: 2 # out of 3
+---
+
+<p>In MNIST each image has dimensions 28x28 and with each pixel represented by a grayscale value with range [0,255]. Rescale the images such that they are in the rate [1, 255]. For each pixel you can do x <- min(x+1, 255). You will use 0 to represent an unknown value. You can now generate images with unknown values programmatically or randomly by inserting zeros into each image.</p>
+
+<p>Train a network to predict the probability distributions (categorical) of unknown pixels given an image that has unknown values. After training the network, given an image that is completely unknown, which pixels have the highest entropy? Can you propose and explanation for your results?</p>
+
+
+<hr />
+
+<h3>Solutions</h3>
